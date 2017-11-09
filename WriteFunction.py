@@ -1,0 +1,15 @@
+def is_leap(year):
+    leap = False
+    if year%400 ==0 :
+        leap = True
+    elif year%100 !=0 and year%4 ==0:
+        leap = True
+
+    # Write your logic here
+
+    return leap
+
+# print(is_leap(2000)) //checkpoint
+# best solution
+# def is_leap(year):
+#     return year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
